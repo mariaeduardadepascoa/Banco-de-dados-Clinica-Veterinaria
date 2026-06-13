@@ -1,0 +1,36 @@
+BANCO DE DADOS - PETCARE (MER)
+
+A PetCare é uma clínica veterinária que atende diferentes tipos de animais de estimação (como cachorros, passarinhos, coelhos, gatos, etc); oferecendo consultas, exames e tratamentos.
+Os donos podem trazer seus pets para atendimento e a cada visita gera registros médicos e financeiros no banco de dados. 
+Esse sistema organizar informações de clientes, animais e atendimentos para garantir um controle eficiente e evitar confusões.
+
+
+ENTIDADES DESTE BANCO -----------------------
+
+1. CLIENTE
+
+Atributos: ID_Cliente (Chave Primária), Nome Completo, CPF, Telefone, E-mail
+
+Descrição: Representa o dono do animal que realiza pedidos de consultas ou procedimentos. Cada atributo descreve uma característica desse cliente.
+
+
+2. ANIMAL
+
+Atributos: ID_Animal (Chave Primária), Nome do Animal, Espécie (cachorro, gato, etc.), Raça, Data de Nascimento, ID_Cliente (Chave Estrangeira)
+
+Descrição: Representa o pet atendido. Cada atributo descreve uma característica desse animal (a não ser o ID_Cliente que representa seu dono, para que cada animal esteja ligado a seu devido tutor no sistema).
+
+
+3. ATENDIMENTO
+
+Atributos: ID_Atendimento (Chave Primária), Data do Atendimento, Tipo de Serviço (consulta, vacina, cirurgia), Valor Cobrado, ID_Animal (Chave Estrangeira)
+
+
+Descrição: Representa cada consulta ou procedimento do PetCare. Seus atributos representam informações sobre o serviço, além de armazenar a pessoa e o animal envolvidos.
+
+
+RELAÇÕES ENTRE AS ENTIDADES -----------------------
+
+CLIENTE -> ANIMAL (1:N)
+ANIMAL -> ATENDIMENTO (1:N)
+CLIENTE -> ATENDIMENTO (1:N)
