@@ -25,7 +25,6 @@ Descrição: Representa o pet atendido. Cada atributo descreve uma característi
 
 Atributos: ID_Atendimento (Chave Primária), Data do Atendimento, Tipo de Serviço (consulta, vacina, cirurgia), Valor Cobrado, ID_Animal (Chave Estrangeira)
 
-
 Descrição: Representa cada consulta ou procedimento do PetCare. Seus atributos representam informações sobre o serviço, além de armazenar a pessoa e o animal envolvidos.
 
 
